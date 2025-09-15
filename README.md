@@ -6,9 +6,9 @@ Este é um projeto acadêmico desenvolvido para o **Enterprise Challenge - FIAP*
 O objetivo é criar um **protótipo de site** que divulgue esportes pouco conhecidos e ofereça uma experiência de navegação que simule um ambiente de interação entre praticantes, professores e interessados.  
 
 ## 🚀 Tecnologias Utilizadas  
-- HTML5  
+- HTML  
 - Bootstrap  
-- CSS3  
+- CSS  
 - JavaScript  
 
 ## 🎯 Funcionalidades do Protótipo  
