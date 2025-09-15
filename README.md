@@ -22,3 +22,8 @@ Este projeto foi desenvolvido como parte do **Enterprise Challenge da FIAP**, ap
 
 ## 📂 Estrutura do Repositório  
 
+├── index.html
+├── /css
+├── /js
+├── /img
+└── README.md
