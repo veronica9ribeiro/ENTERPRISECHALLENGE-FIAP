@@ -1,0 +1,137 @@
+:root {
+    --color-orange: #FF6600;
+    --color-dark-grey: #1C1C1C;
+    --color-white: #FEFEFE;
+    --color-fire-bg: #E65D3E;
+    --color-fire-icon: #FFC851;
+    --color-water-bg: #609EEE;
+    --color-water-icon: #AAE5FE;
+    --color-wind-bg: #9FCFE4;
+    --color-wind-icon: #C7F0FE;
+    --color-earth-bg: #75C18A;
+    --color-earth-icon: #B1E5A7;
+
+    background-color: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: var(--color-dark-grey);
+    border: 1px solid;
+    min-height: 150px;
+    font-size: 2rem;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header img {
+    height: auto;
+    width: 8rem;
+    margin-left: 4rem;
+}
+
+.header a {
+    color: white;
+    font-size: 24px;
+    max-height: 2.5rem;
+    border-radius: 5px;
+    padding: 0rem 0.8rem 0rem 0.8rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: baseline;
+    padding-right: 4rem;
+    gap: 1rem;
+    padding-top: 3rem;
+    margin-left: 9rem;
+}
+
+.nav-links a:hover {
+    background-color: var(--color-orange);
+}
+
+.nav-links p {
+    color: var(--color-white);
+    font-size: 24px;
+}
+
+.nav-links #btn-login {
+    background-color: var(--color-water-bg);
+}
+
+.nav-links #btn-signup {
+    background-color: var(--color-earth-bg);
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.container-title {
+    margin: 3rem 0rem 0rem 10rem;
+}
+
+.secondary-title {
+    display: flex;
+    gap: 10px;
+    justify-content: baseline;
+}
+
+.secondary-title h3 {
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.container-carousel {
+    display: flex;
+    gap: 10px;
+}
+
+.big-img {
+    margin: 5rem 0rem 0rem 4rem;
+}
+
+.big-img img {
+    border-radius: 10px;
+}
+
+.gallery {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: 290px 290px;
+    grid-template-rows: 196px 196px;
+    gap: 10px;
+}
+
+
+.gallery .item-2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.gallery .item-3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.gallery .item-4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.gallery .item-5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.gallery img {
+    border-radius: 10px;
+}
