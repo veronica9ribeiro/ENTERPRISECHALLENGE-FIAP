@@ -1,4 +1,4 @@
-
+/* RESET */
 body {
     margin: 0;
     font-family: 'Poppins', Arial, sans-serif;
@@ -11,9 +11,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 240px;
+    width: 260px;
     height: 100vh;
-    background: #1C1C1C;
+    background: #232323;
     color: #fff;
     z-index: 100;
     display: flex;
@@ -52,34 +52,58 @@ body {
 .sidebar-nav li a:focus {
     color: #fff;
     background: transparent;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 600;
     letter-spacing: 1.2px;
-    padding: 10px 0 10px 8px;
+    padding: 12px 0 12px 12px;
     display: flex;
     align-items: center;
     border-radius: 6px;
     transition: background 0.2s, color 0.2s;
     text-decoration: none;
+    gap: 12px;
 }
 
 .sidebar-nav li a.active,
 .sidebar-nav li a:hover {
     color: #ff6600;
-    background: #232323;
+    background: #fff;
+    font-weight: 700;
+}
+
+.sidebar-nav li a.active {
+    background: #ff6600;
+    color: #fff;
+}
+
+.sidebar-nav li a.active .icon,
+.sidebar-nav li a:hover .icon {
+    color: #ff6600;
+}
+
+.sidebar-nav li a .icon {
+    font-size: 1.3rem;
+    margin-right: 7px;
+    color: #fff;
+    transition: color 0.2s;
 }
 
 
 .main-content {
-    margin-left: 240px;
-    padding: 0 32px 32px 32px;
+ margin-left: 260px;
+    padding: 0 0 32px 0;
+    background: #fafafa;
+    min-height: 100vh;
+    max-width: 1700px;     
+    margin-right: auto;
+    margin-left: calc(260px + ((100vw - 1100px - 260px)/2)); /* centraliza considerando o sidebar */
 }
 
-
+/
 .topnav {
     background: #fff;
     padding: 0;
-    margin-left: 240px;
+    margin-left: 260px;
     border-bottom: 1px solid #eee;
     position: sticky;
     top: 0;
@@ -93,7 +117,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0 32px;
-    height: 64px;
+    height: 56px;
     gap: 32px;
 }
 
@@ -107,7 +131,7 @@ body {
 
 .topnav ul li a {
     color: #222;
-    font-size: 1.1rem;
+    font-size: 1.08rem;
     font-weight: 500;
     text-decoration: none;
     padding: 8px 12px;
@@ -120,36 +144,46 @@ body {
     background: #f5f5f5;
 }
 
-
+/* BANNER */
 .banner-img, .Banner {
     display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 340px;
+    width: calc(100% - 360px);
+    max-width: 100vw;
+    height: 320px;
     object-fit: cover;
-    margin: 0 auto 32px auto;
-    border-radius: 12px;
+    margin-left: 260px;
+    margin-bottom: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
-
+/* SEARCH SECTION */
 .search-section {
     margin: 32px 0 24px 0;
+    padding: 0 32px;
 }
 
 .search-section h2 {
     font-size: 1.5rem;
     margin-bottom: 18px;
+    font-weight: 700;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
     background: #fff;
-    border: 2px solid #ff6600;
+    border: 2px solid #eee;
     border-radius: 30px;
     padding: 10px 24px;
     gap: 18px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.search-bar label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #222;
 }
 
 .search-bar input, .search-bar select {
@@ -158,7 +192,8 @@ body {
     background: transparent;
     font-size: 1rem;
     padding: 6px 8px;
-    min-width: 120px;
+    min-width: 90px;
+    color: #222;
 }
 
 .search-bar .divider {
@@ -180,18 +215,20 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     transition: background 0.2s;
+    margin-left: 8px;
 }
 
 .search-btn:hover {
     background: #e65c00;
 }
 
-
+/* CARDS */
 .card-row {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 32px;
+    padding: 0 32px;
 }
 
 .card, .card.small {
@@ -203,11 +240,12 @@ body {
     min-width: 220px;
     display: flex;
     flex-direction: column;
+    border: 1px solid #eee;
 }
 
 .card img {
     width: 100%;
-    height: 160px;
+    height: 140px;
     object-fit: cover;
 }
 
@@ -222,24 +260,26 @@ body {
 .card-body h5 {
     margin: 0 0 8px 0;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .details-btn {
-    background: #ff6600;
-    color: #fff;
-    border: none;
+    background: #fff;
+    color: #ff6600;
+    border: 1px solid #ff6600;
     border-radius: 20px;
     padding: 6px 18px;
     font-size: 0.95rem;
     text-decoration: none;
     margin-top: 10px;
     align-self: flex-start;
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 600;
 }
 
 .details-btn:hover {
-    background: #e65c00;
+    background: #ff6600;
+    color: #fff;
 }
 
 .badge {
@@ -251,62 +291,15 @@ body {
     font-weight: 600;
     margin-top: 8px;
     display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
-
-.custom-search-section {
-    margin: 40px 0;
-}
-
-.custom-search-card {
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    padding: 32px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.custom-search-card .info-text {
-    font-size: 1rem;
-    margin-bottom: 18px;
-}
-
-.form-row {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 18px;
-    flex-wrap: wrap;
-}
-
-.form-row > div {
-    flex: 1;
-    min-width: 160px;
-}
-
-.form-row.center {
-    justify-content: center;
-}
-
-.find-btn {
-    background: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 28px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.find-btn:hover {
-    background: #e65c00;
-}
-
-
+/* CATEGORIAS ELEMENTAIS */
 .elemental-categories {
     margin: 48px 0 32px 0;
+    padding: 0 32px;
 }
 
 .category-row {
@@ -346,8 +339,10 @@ body {
     margin-bottom: 8px;
 }
 
+/* SOBRE NÓS */
 .about-section {
     margin: 56px 0 32px 0;
+    padding: 0 32px;
 }
 
 .about-content {
@@ -390,7 +385,7 @@ body {
     background: #fff;
 }
 
-
+/* FOOTER */
 .footer {
     background: #ff6600;
     color: #fff;
@@ -494,73 +489,19 @@ body {
     color: #fff;
 }
 
-ul.nav li a,
-ul.nav li a:visited,
-ul.nav li a:active,
-ul.nav li a:focus {
-    color: #000 !important;
-    text-decoration: none !important;
-    outline: none;
-    font-family: poppins;
-    font-weight: 500;
-    font-size: 22px;
-    transition: 0.3s;
-    letter-spacing: 1.2px;
-    padding: 14px 99px;
-    text-align: center;
-    margin-left: 50px;
-}
-
-ul.nav li a:hover {
-    color: #ff6600 !important;
-    transition: 0.3s;
-     text-decoration: solid underline !important;
-
-}
-
-ul.sidebar-nav li a,
-ul.sidebar-nav li a:visited,
-ul.sidebar-nav li a:active,
-ul.sidebar-nav li a:focus {
-    color: #fff !important;
-    background: transparent;
-    font-family: poppins, sans-serif;
-    font-weight: 500px;
-    font-size: 20px;
-    transition: 0.3s;
-    letter-spacing: 1.7px;
-    padding: 12px 20px;
-    display: block;
-    text-align: left;
-    margin-left: 0;
-}
-
-.sidebar {
-    width: 2900px !important;   
-    max-width:350px;
-    height: 1vh;             
-    background: #1C1C1C ;      
-}
-
-ul.sidebar-nav li {
-    margin-bottom: 22px; /* ajuste o valor conforme desejar */
-}
-
-ul.sidebar-nav li a:hover,
-ul.sidebar-nav li a.active {
-    color: #ff6600 !important;
-    background: transparent;
-    transition: 0.3s;   
-  
-}
-
-.Banner {
-display: block;
-    width: calc(100% - 240px); /* ocupa o espaço restante */
-    max-width: 100%;
-    height: 500px;
-    object-fit: cover;
-    margin-left: 240px; /* igual à largura do sidebar */
+/* AJUSTES EXTRAS */
+@media (max-width: 1100px) {
+    .main-content, .topnav, .banner-img, .Banner {
+        margin-left: 0;
+        width: 100vw;
+    }
+    .sidebar {
+        position: relative;
+        width: 100vw;
+        height: auto;
+        flex-direction: row;
+        padding: 16px;
+    }
 }
 
 
