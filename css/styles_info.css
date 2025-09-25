@@ -93,6 +93,11 @@ a {
     margin-top: 3px;
 }
 
+.secondary-title a {
+    text-decoration: underline;
+    color: var(--color-dark-grey);
+}
+
 .gallery {
     max-width: 1600px;
     display: flex;
@@ -132,6 +137,7 @@ a {
     align-items: center;
     gap: 1.5rem;
     margin-left: 12rem;
+    max-height: 29rem;
 }
 
 .profile-area {
@@ -187,10 +193,6 @@ a {
     justify-content: space-between;
 }
 
-.rating {
-    margin-top: 2rem;
-}
-
 #contact {
     width: 100px;
     height: 50px;
@@ -207,6 +209,7 @@ a {
     margin: 0 auto;
     border: 2px solid #f2f2f2;
     margin-right: 2rem;
+    max-height: 700px;
 }
 
 .custom-search-card img {
@@ -302,6 +305,211 @@ a {
     gap: 6px;
 }
 
+.rating-comentary {
+    margin-left: 13rem;
+    margin-top: 5rem;
+}
 
+.rating-comentary h2 {
+    font-size: 64px;
+}
 
+.comentary-filters {
+    display: flex;
+    margin-left: 12rem;
+    gap: 5px;
+}
+
+#coment-btn {
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coment-btn:hover {
+    background-color: var(--color-orange);
+}
+
+#coment-btn:focus {
+    background-color: var(--color-orange);
+    border: none;
+    color: var(--color-white);
+}
+
+.coment-section {
+    display: flex;
+    margin: 5rem 12rem 0rem 12rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.coment-section img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.coment-info {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.coment-1,.coment-2,.coment-3 {
+    margin-bottom: 4rem;
+}
+
+.coment-info-txt {
+    margin-left: 1rem;
+}
+
+.coment-txt {
+    max-width: 400px;
+    max-height: 150px;
+}
+
+.coment-txt h3{
+    font-size: 24px;
+}
+
+.upcoming-events-container {
+    margin-bottom: 8rem;
+}
+
+.upcoming-events {
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
+
+.section-title {
+    padding-left: 32px;
+    margin-bottom: 18px;
+}
+
+.card-row {
+    display: flex;
+    gap: 29px;
+    margin-bottom: 32px;
+    padding: 0 32px;
+}
+
+.card,
+.card.small {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body h5 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.details-btn {
+    background: #fff;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    margin-top: 10px;
+    align-self: flex-start;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 600;
+}
+
+.details-btn:hover {
+    background: #ff6600;
+    color: #fff;
+}
+
+.container-footer {
+    background-color: var(--color-orange);
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.container-footer img {
+    width: 8rem;
+    margin-left: 12rem;
+    margin-top: -6rem;
+    width: 180px;
+    height: 130px;
+    margin-right: 10rem;
+}
+
+.footer-divisions {
+    display: flex;
+    gap: 5rem;
+}
+
+.footer-divisions h2 {
+    color: var(--color-white);
+}
+
+.footer-divisions a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.footer-start,.footer-about-us,.footer-support {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-btn-contact {
+    margin-left: 24rem;
+    border-radius: 25px;
+    width: 180px;
+    height: 40px;
+    border: var(--color-orange);
+    color: var(--color-orange);
+    font-weight: 500;
+}
+
+#footer-btn-contact:hover {
+    background-color: var(--color-orange);
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.media-and-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.media-and-contact a {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.media-and-contact img {
+    width: 144px;
+    height: 40px;
+    margin-left: 25rem;
+}
 
