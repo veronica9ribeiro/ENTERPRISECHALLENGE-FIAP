@@ -167,6 +167,7 @@ a {
     margin-left: 12.5rem;
     margin-top: 2rem;
     width: 1000px;
+    text-align: justify;
 }
 
 .sport-description a {
@@ -183,6 +184,7 @@ a {
 
 .creator-description {
     margin-top: 3rem;
+    text-align: justify;
 }
 .creator-description h2 {
     font-size: 24px;
