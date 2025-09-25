@@ -10,8 +10,11 @@
     --color-wind-icon: #C7F0FE;
     --color-earth-bg: #75C18A;
     --color-earth-icon: #B1E5A7;
+    --color-light-grey: #aaa9a9;
 
     background-color: var(--color-white);
+
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 a {
@@ -26,13 +29,13 @@ a {
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .header img {
-    height: auto;
     width: 8rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
+    width:180px;
+    height: 130px;
 }
 
 .header a {
@@ -72,11 +75,11 @@ a {
 .container-content {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
 }
 
 .container-title {
-    margin: 3rem 0rem 0rem 10rem;
+    margin: 3rem 0rem 0rem 13rem;
 }
 
 .secondary-title {
@@ -90,48 +93,215 @@ a {
     margin-top: 3px;
 }
 
-.container-carousel {
-    display: flex;
-    gap: 10px;
-}
-
-.big-img {
-    margin: 5rem 0rem 0rem 4rem;
-}
-
-.big-img img {
-    border-radius: 10px;
-}
-
 .gallery {
-    display: grid;
-    margin-top: 5rem;
-    grid-template-columns: 290px 290px;
-    grid-template-rows: 196px 196px;
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-}
-
-
-.gallery .item-2 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.gallery .item-3 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.gallery .item-4 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.gallery .item-5 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
 }
 
 .gallery img {
-    border-radius: 10px;
+    height: 500px;
+    width: 1500px;
 }
+
+.gallery-bt-txt {
+    margin-left: 13rem;
+}
+
+.gallery-bt-txt h4{
+    font-size: small;
+    margin-top: 5px;
+    color: var(--color-light-grey);
+}
+
+.description-area {
+    display: flex;
+}
+
+.profile-description {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    flex-wrap: wrap;
+}
+
+.creator-profile-area{
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 12rem;
+}
+
+.profile-area {
+    display: flex;
+    gap: 2rem;
+}
+
+.creator-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-txt p {
+    color: var(--color-light-grey);
+}
+
+.profile-underbar {
+    display: flex;
+    gap: 2rem;
+}
+
+.profile-underbar h3{
+    font-size: 16px;
+}
+
+.sport-description {
+    margin-left: 12.5rem;
+    margin-top: 2rem;
+    width: 1000px;
+}
+
+.sport-description a {
+    text-decoration: underline;
+    color: var(--color-dark-grey);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sport-description h2{
+    max-width: 1000px;
+    font-size: 24px;
+}
+
+.creator-description {
+    margin-top: 3rem;
+}
+.creator-description h2 {
+    font-size: 24px;
+}
+
+.profile-end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    margin-top: 2rem;
+}
+
+#contact {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.custom-search-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 36px 24px 28px 24px;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #f2f2f2;
+    margin-right: 2rem;
+}
+
+.custom-search-card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.custom-search-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.custom-search-card .form-row {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.custom-search-card .form-row>div {
+    min-width: 260px;
+    background: #fff;
+    border: 2px solid #bdbdbd;
+    border-radius: 12px;
+    padding: 18px 18px 10px 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-search-card label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+    font-size: 1.1rem;
+}
+
+.custom-search-card input,
+.custom-search-card select {
+    padding: 12px 100px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.08rem;
+    background: #fafafa;
+    color: #222;
+    margin-bottom: 0;
+    margin-top: 2px;
+    outline: none;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.custom-search-card input:focus,
+.custom-search-card select:focus {
+    box-shadow: 0 0 0 2px #ff6600;
+    border: none;
+}
+
+.custom-search-card .form-row.center {
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.find-btn {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 16px 48px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(255, 102, 0, 0.08);
+}
+
+.find-btn:hover {
+    background: #e65c00;
+    color: #fff;
+}
+
+.custom-search-card .info-text {
+    color: #888;
+    font-size: 0.98rem;
+    margin-top: 18px;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+
+
+
